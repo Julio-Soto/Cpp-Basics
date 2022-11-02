@@ -32,5 +32,11 @@ int main() {
          << "County Tax: $" << county_tax << endl
          << "Total Tax: $" << total_tax << endl;
 
+    double temperature_F, temperature_C;
+    cout << "Enter Temperature in Farenheit:";
+    cin >> temperature_F;
+    temperature_C = (temperature_F - 32) * (5.0/9.0);
+    cout << "Temperature in Celcius: " << temperature_C << endl;
+
     return 0;
 }
