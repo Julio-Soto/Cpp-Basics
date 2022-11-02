@@ -1,9 +1,10 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main() {
-    const double pi = 3.14;
+    const double PI = 3.141592;
     int file_size = 0;
     double sales = 9.99;
     bool isActive = true;
@@ -32,11 +33,18 @@ int main() {
          << "County Tax: $" << county_tax << endl
          << "Total Tax: $" << total_tax << endl;
 
+    /* CONVERSION PROBLEM.
     double temperature_F, temperature_C;
     cout << "Enter Temperature in Farenheit:";
     cin >> temperature_F;
     temperature_C = (temperature_F - 32) * (5.0/9.0);
     cout << "Temperature in Celcius: " << temperature_C << endl;
-
+    */
+    // Area of a Circle Problem.
+    double radius, area;
+    cout << "Enter the radius of the Circle:";
+    cin >> radius;
+    area = PI * pow(radius,2);
+    cout << "The area of the circle is: " << area << endl;
     return 0;
 }
