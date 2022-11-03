@@ -71,14 +71,21 @@ int main() {
     int random_number = rand() % 100;
     cout << "random Number: " << random_number << endl;
      */
-
+    /*
     int dice_roll{};
     short max_value{12};
     short min_value{1};
     srand(time(nullptr));
     dice_roll = (rand() % (max_value - min_value +1)) + min_value;
-    cout << "Dice: " << dice_roll << endl;
+    cout << "Dice: " << dice_roll << endl;*/
 
+    short array_size = 5;
+    int my_array[5] = {23,63,51,12,11}; // Arrays are fixed size
+    my_array[2] = 22;
+    cout << "array size:" << (sizeof(my_array) / sizeof(int)) << endl;
+    for(int i = 0; i < (sizeof(my_array) / sizeof(int)); ++i){
+        cout << i << ":  " << my_array[i] << endl;
+    }
     return 0;
 
 }
