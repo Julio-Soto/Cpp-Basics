@@ -41,10 +41,20 @@ int main() {
     cout << "Temperature in Celcius: " << temperature_C << endl;
     */
     // Area of a Circle Problem.
+    /*
     double radius, area;
     cout << "Enter the radius of the Circle:";
     cin >> radius;
     area = PI * pow(radius,2);
-    cout << "The area of the circle is: " << area << endl;
+    cout << "The area of the circle is: " << area << endl;*/
+
+    //Declare variables.
+    double some_number{3.2};
+    int a_number(5);
+    unsigned int positive_number{66};
+    int binary_number = 0b11111111;
+    int hex_number = 0xff;
+    cout << binary_number << endl; // prints in decimal.
+    cout << hex_number << endl; // prints decimal
     return 0;
 }
