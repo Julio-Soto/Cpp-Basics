@@ -60,7 +60,7 @@ int main() {
     cout << binary_number << endl; // prints in decimal.
     cout << hex_number << endl; // prints decimal
      */
-
+    /*
     int big_number = 1'000'000;
     short little_number{big_number};// error: number is too large for short type var.
     cout << "big number: " << big_number << endl;
@@ -70,6 +70,15 @@ int main() {
     srand(seed);
     int random_number = rand() % 100;
     cout << "random Number: " << random_number << endl;
+     */
+
+    int dice_roll{};
+    short max_value{12};
+    short min_value{1};
+    srand(time(nullptr));
+    dice_roll = (rand() % (max_value - min_value +1)) + min_value;
+    cout << "Dice: " << dice_roll << endl;
+
     return 0;
 
 }
