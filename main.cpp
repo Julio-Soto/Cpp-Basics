@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -49,6 +51,7 @@ int main() {
     cout << "The area of the circle is: " << area << endl;*/
 
     //Declare variables.
+    /*
     double some_number{3.2};
     int a_number(5);
     unsigned int positive_number{66};
@@ -56,5 +59,17 @@ int main() {
     int hex_number = 0xff;
     cout << binary_number << endl; // prints in decimal.
     cout << hex_number << endl; // prints decimal
+     */
+
+    int big_number = 1'000'000;
+    short little_number{big_number};// error: number is too large for short type var.
+    cout << "big number: " << big_number << endl;
+    cout << "little number: " << little_number << endl;
+
+    long seed = time(nullptr); // seconds since Jan 1 1970
+    srand(seed);
+    int random_number = rand() % 100;
+    cout << "random Number: " << random_number << endl;
     return 0;
+
 }
