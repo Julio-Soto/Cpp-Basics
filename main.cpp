@@ -5,6 +5,8 @@
 
 using namespace std;
 
+ int addition(int x,int y);
+
 int main() {
     const double PI = 3.141592;
     int file_size = 0;
@@ -23,6 +25,7 @@ int main() {
     x = 10, y = 5;
     z = (x + 10) / (3 * y); // order of operations () then  / and *  then  + and -
 
+    /*
     sales = 95000;
     double const state_tax_rate = 0.04;
     double  const county_tax_rate = 0.02;
@@ -34,7 +37,7 @@ int main() {
          << "State Tax: $" << state_tax << endl
          << "County Tax: $" << county_tax << endl
          << "Total Tax: $" << total_tax << endl;
-
+    */
     /* CONVERSION PROBLEM.
     double temperature_F, temperature_C;
     cout << "Enter Temperature in Farenheit:";
@@ -78,14 +81,23 @@ int main() {
     srand(time(nullptr));
     dice_roll = (rand() % (max_value - min_value +1)) + min_value;
     cout << "Dice: " << dice_roll << endl;*/
-
+    /*
     short array_size = 5;
-    int my_array[5] = {23,63,51,12,11}; // Arrays are fixed size
+    int my_array[5] = {23,63,51,12,11}; // Arrays are fixed size. no push() or pop()
     my_array[2] = 22;
     cout << "array size:" << (sizeof(my_array) / sizeof(int)) << endl;
     for(int i = 0; i < (sizeof(my_array) / sizeof(int)); ++i){
         cout << i << ":  " << my_array[i] << endl;
     }
+    */
+
+
+
     return 0;
 
+}
+
+int addition(int x,int y){
+    int sum = x = y;
+    return sum;
 }
