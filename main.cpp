@@ -91,7 +91,13 @@ int main() {
     }
     */
 
-
+    //IF statements
+    int age = 31;
+    char gender = 'f';
+    if(age > 18 && gender == 'm') cout << "you are a male adult" << endl;
+    if(age > 18 && gender =='f') cout << "you are an adult female" << endl;
+    if(age < 18 && gender == 'm') cout << "you are a male minor" << endl;
+    if(age < 18 && gender =='f') cout << "you are an minor female" << endl;
 
     return 0;
 
