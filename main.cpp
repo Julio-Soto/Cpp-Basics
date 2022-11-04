@@ -101,6 +101,7 @@ int main() {
     */
 
     //SWITCH STATEMENTS.
+    /*
     int day_value{};
     cout << "enter a day value (1 - 7): ";
     cin >> day_value;
@@ -129,6 +130,15 @@ int main() {
         default:
             cout << "Invalid Day Value";
     }
+    */
+
+    short secret_number = 7;
+    short user_guess{};
+    while(user_guess != secret_number){
+        cout << "enter your guess: ";
+        cin >> user_guess;
+    }
+
     return 0;
 
 }
