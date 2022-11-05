@@ -5,7 +5,8 @@
 
 using namespace std;
 
- int addition(int x,int y);
+int addition(int x,int y);
+void getFileSize(int& fileSize);
 
 int main() {
     const double PI = 3.141592;
@@ -131,13 +132,19 @@ int main() {
             cout << "Invalid Day Value";
     }
     */
-
+    /*
     short secret_number = 7;
     short user_guess{};
     while(user_guess != secret_number){
         cout << "enter your guess: ";
         cin >> user_guess;
     }
+    */
+
+    // function call with pass y reference.
+    // the global file_size gets modified.
+    getFileSize(file_size);
+    cout << file_size;
 
     return 0;
 
@@ -146,4 +153,10 @@ int main() {
 int addition(int x,int y){
     int sum = x = y;
     return sum;
+}
+
+// pass by reference parameters
+void getFileSize(int& fileSize) {
+    cout << "enter file size: ";
+    cin >> fileSize;
 }
