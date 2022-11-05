@@ -140,11 +140,21 @@ int main() {
         cin >> user_guess;
     }
     */
-
+    /*
     // function call with pass y reference.
     // the global file_size gets modified.
     getFileSize(file_size);
     cout << file_size;
+    */
+
+
+    struct cropYield {
+        int quantity;
+        double size;
+    };
+    cropYield myYield;
+    myYield.size = 87;
+
 
     return 0;
 
