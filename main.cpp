@@ -165,7 +165,7 @@ int main() {
     getFileSize(file_size);
     cout << file_size;
     */
-
+    /*
     // using predefined structs
     PersonInfo somebody;
     somebody.height = 5.9;
@@ -173,9 +173,24 @@ int main() {
     somebody.birthday = {29,5,1998};
     cout << somebody.birthday.day;
 
+    // class instance
     DayOfYear today = {10, 6};
     today.output();
+    */
 
+    const int rows = 3, cols = 3;
+    int numberGrid[rows][cols] = {
+            {11,12,13},
+            {21,22,23},
+            {31,32,33}
+    };
+    cout << numberGrid[0][4] << endl;
+
+    for(int i = 0; i < rows; ++i) {
+        for (int k = 0; k < cols; ++k)
+            cout << numberGrid[i][k] << " ";
+        cout << endl;
+    }
     return 0;
 
 }
