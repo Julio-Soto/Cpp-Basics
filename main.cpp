@@ -17,6 +17,13 @@ struct PersonInfo {
     Date birthday;
 };
 
+class DayOfYear {
+public:
+    void output();
+    int month;
+    int day;
+};
+
 int addition(int x,int y);
 void getFileSize(int& fileSize);
 
@@ -164,8 +171,10 @@ int main() {
     somebody.height = 5.9;
     somebody.weight = 199;
     somebody.birthday = {29,5,1998};
+    cout << somebody.birthday.day;
 
-    
+    DayOfYear today = {10, 6};
+    today.output();
 
     return 0;
 
@@ -180,4 +189,8 @@ int addition(int x,int y){
 void getFileSize(int& fileSize) {
     cout << "enter file size: ";
     cin >> fileSize;
+}
+
+void DayOfYear::output() {
+    cout << "month: " << month << " day: " << day << endl;
 }
