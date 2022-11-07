@@ -5,6 +5,18 @@
 
 using namespace std;
 
+struct Date {
+        int day;
+        int month;
+        int year;
+};
+
+struct PersonInfo {
+    double height;
+    int weight;
+    Date birthday;
+};
+
 int addition(int x,int y);
 void getFileSize(int& fileSize);
 
@@ -141,20 +153,19 @@ int main() {
     }
     */
     /*
-    // function call with pass y reference.
+    // function call with pass by reference.
     // the global file_size gets modified.
     getFileSize(file_size);
     cout << file_size;
     */
 
+    // using predefined structs
+    PersonInfo somebody;
+    somebody.height = 5.9;
+    somebody.weight = 199;
+    somebody.birthday = {29,5,1998};
 
-    struct cropYield {
-        int quantity;
-        double size;
-    };
-    cropYield myYield;
-    myYield.size = 87;
-
+    
 
     return 0;
 
